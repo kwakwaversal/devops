@@ -1,0 +1,15 @@
+[
+   "trigger",
+   "/tmp/sftp",
+   {
+      "name":"SFTP trigger",
+      "expression":[
+         "match",
+         "*.xml"
+      ],
+      "command":[
+         "/bin/touch",
+         "/tmp/sftp-triggered"
+      ]
+   }
+]

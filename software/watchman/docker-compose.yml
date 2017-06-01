@@ -1,0 +1,14 @@
+version: '2'
+services:
+  watchman:
+    build: ./build
+    volumes:
+      - /tmp/sftp:/tmp/sftp:ro
+      - ./watchman.json:/etc/watchman.json
+  watchman-sftp:
+    image: atmoz/sftp
+    command: foo:pass:::upload
+    ports:
+        - "2244:22"
+    volumes:
+        - /tmp/sftp/foo/upload:/home/foo/upload
