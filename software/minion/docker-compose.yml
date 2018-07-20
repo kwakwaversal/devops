@@ -1,0 +1,16 @@
+version: '2'
+services:
+  minion:
+    build: ./build
+    command: ["./wait-for-it.sh", "db:5432", "--", "morbo", "minion.pl"]
+    # command: tail -f /var/log/dpkg.log
+    ports:
+        - "3000:3000"
+    volumes:
+        - ./:/opt
+  db:
+    image: postgres:9.6
+    environment:
+        POSTGRES_PASSWORD: password
+    ports:
+        - "5431:5432"
