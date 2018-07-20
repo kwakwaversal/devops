@@ -7,7 +7,7 @@ approaches you might take.
 
 * Read lots and lots of documentation - you might understand it as you read it,
   but will ultimately lose some of the knowledge you gained to sleep, context
-  switching etc. if you don't apply any of it.
+  switching etc. if you don't apply any of it within a certain timeframe.
 * Install some software and try and get it to do what you want, occasionally
   referring to the documentation. You might get it working, but cannot remember
   the steps you took to get there.
