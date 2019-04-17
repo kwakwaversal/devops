@@ -3,7 +3,6 @@ services:
   mattermost-api-interface:
     build: ./build
   mattermost-preview:
-    name: mattermost-preview
     image: mattermost/mattermost-preview
     ports:
       - 8065:8065

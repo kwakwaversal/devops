@@ -1,0 +1,12 @@
+version: '2'
+services:
+  asterisk-carrier:
+    build: ./carrier
+    image: devops/asterisk-carrier
+    ports:
+      - 5061:5060
+  asterisk-testbox:
+    build: ./testbox
+    image: devops/asterisk-testbox
+    ports:
+      - 5062:5060
