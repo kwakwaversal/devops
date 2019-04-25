@@ -1,0 +1,23 @@
+version: '2'
+services:
+  asterisk-carrier:
+    build: ./carrier
+    image: devops/asterisk-carrier
+  asterisk-testbox:
+    build: ./testbox
+    image: devops/asterisk-testbox
+    # network_mode: host
+    # volumes:
+    #   - /etc/asterisk:/etc/asterisk
+    # ports:
+    #   - 3478:3478/tcp
+    #   - 3478:3478/udp
+    #   - 5060:5060/tcp
+    #   - 5060:5060/udp
+    #   - 5061:5061/tcp
+    #   - 5061:5061/udp
+    #   - 8088:8088/tcp
+    #   - 8089:8089/tcp
+    #   - 10000-10099:10000-10099/udp
+    #   - 19302:19302/tcp
+    #   - 19302:19302/udp
