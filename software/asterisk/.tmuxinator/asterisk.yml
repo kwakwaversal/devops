@@ -11,12 +11,12 @@ startup_window: asterisk
 windows:
   - dc: docker-compose ps
   - asterisk:
-    layout: even-horizontal
-    panes:
-      - docker-compose exec asterisk-carrier /bin/bash -c 'asterisk -rvvvvvvvvvv'
-      - docker-compose exec asterisk-testbox /bin/bash -c 'asterisk -rvvvvvvvvvv'
+      layout: even-horizontal
+      panes:
+        - docker-compose exec asterisk-carrier /bin/bash -c 'asterisk -rvvvvvvvvvv'
+        - docker-compose exec asterisk-testbox /bin/bash -c 'asterisk -rvvvvvvvvvv'
   - asterisk-vim:
-    layout: even-horizontal
-    panes:
-      - docker-compose exec asterisk-carrier /bin/bash -lc 'vim /etc/asterisk/sip.conf'
-      - docker-compose exec asterisk-testbox /bin/bash -lc 'vim /etc/asterisk/sip.conf'
+      layout: even-horizontal
+      panes:
+        - docker-compose exec asterisk-carrier /bin/bash -lc 'vim /etc/asterisk/sip.conf'
+        - docker-compose exec asterisk-testbox /bin/bash -lc 'vim /etc/asterisk/sip.conf'
