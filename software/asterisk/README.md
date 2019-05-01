@@ -10,7 +10,7 @@ $ docker-compose up -d
 Or if you have [tmuxinator]
 
 ```sh
-$ tmuxinator start -p .tmuxinator/asterisk.yml
+$ tmuxinator start -n asterisk
 ```
 
 # DESCRIPTION

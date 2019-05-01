@@ -1,5 +1,4 @@
 name: asterisk
-root: ~/git/devops/software/asterisk
 
 on_project_start: docker-compose up -d
 on_project_first_start: docker-compose build
