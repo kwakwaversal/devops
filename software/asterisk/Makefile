@@ -17,7 +17,11 @@ carrier/%.conf:
 testbox/%.conf:
 	docker-compose exec asterisk-testbox cat /etc/asterisk/$*.conf | dos2unix > testbox/$*.conf
 
-packages:
-	sudo apt-get install -y dos2unix
+# See https://certbot.eff.org/ for more information
+certbot:
+	sudo certbot certonly
 
-.PHONY: packages
+packages:
+	sudo apt-get install -y dos2unix certbot
+
+.PHONY: packages letsencrypt

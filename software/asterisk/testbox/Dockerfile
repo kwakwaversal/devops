@@ -4,7 +4,7 @@ RUN yum install -y readline vim openssl
 
 COPY extensions.conf /etc/asterisk/extensions.conf
 COPY http.conf /etc/asterisk/http.conf
-COPY pjsip.conf /etc/asterisk/pjsip.conf
+# COPY pjsip.conf /etc/asterisk/pjsip.conf
 COPY rtp.conf /etc/asterisk/rtp.conf
 COPY sip.conf /etc/asterisk/sip.conf
 
